@@ -11,7 +11,7 @@ ratingInputs.forEach(input => {
 });
 
 //configurar o gemini
-const apiKey = 'AIzaSyAuarexoIBXXdpAEcMn42czKqQX59F92Kc';
+const apiKey = '';
 const genai = { configure: () => {} }; // Simulação do genai.configure para JavaScript
 genai.configure({ api_key: apiKey });
 

@@ -6,27 +6,65 @@ body {
     background-color: #f2f2f2;
 }
 
+.form {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form div {
+	margin-top: 10px;
+}
+
+.form div input {
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Estilo das receitas */
-.receitas-user {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
+
+/* Estilo do input */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Estilo responsivo */
+@media (min-width: 768px) {
+    input[type="text"],
+    textarea {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+}
+
 
 .card {
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
-    width: calc(50% - 40px);
+    margin: 15px;
+    width: calc(25% - 30px); /* Calcula a largura com a margem subtraída */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.receitas-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards */
 }
 
 .titulo {
@@ -124,6 +162,22 @@ input[type="button"]:hover {
     background-color: #ffcc00;
 }
 /* Estilo do botão de envio de comentário */
+.comentarios-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alinha itens ao topo */
+}
+
+/* Estilo do textarea */
+.comments {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Estilo do botão */
 .enviar-comentario {
     padding: 10px 20px;
     background-color: #f90;
@@ -139,7 +193,14 @@ input[type="button"]:hover {
     background-color: #ffcc00;
 }
 
-.enviar-comentario i {
-    margin-right: 5px;
-}
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .comentarios-wrapper {
+        flex-direction: column; /* Empilha itens verticalmente em telas menores */
+    }
 
+    .comments {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

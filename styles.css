@@ -1,0 +1,145 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo das receitas */
+.receitas-user {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 40px);
+}
+
+.titulo {
+    color: #333;
+    margin-bottom: 10px;
+}
+.favoritar,
+.remover {
+    padding: 10px 20px;
+    background-color: #f90;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.favoritar:hover,
+.remover:hover {
+    background-color: #ffcc00;
+}
+.lista-ingredientes {
+    margin-bottom: 10px;
+}
+
+.lista-ingredientes li {
+    list-style: none;
+}
+
+.preparacao {
+    margin-bottom: 10px;
+}
+
+.preparacao li {
+    list-style: decimal;
+}
+
+/* Estilo das estrelas de avaliação */
+.rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    color: #ccc;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+    padding: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.rating label:before {
+    content: '\2605';
+}
+
+.rating input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #f90;
+}
+
+.rating input:checked ~ label:hover,
+.rating input:checked ~ label:hover ~ label,
+.rating label:hover ~ input:checked ~ label {
+    color: #FED;
+}  font-weight: bold;
+}
+
+.comments {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+input[type="button"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f90;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: #ffcc00;
+}
+/* Estilo do botão de envio de comentário */
+.enviar-comentario {
+    padding: 10px 20px;
+    background-color: #f90;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar-comentario:hover {
+    background-color: #ffcc00;
+}
+
+.enviar-comentario i {
+    margin-right: 5px;
+}
+

@@ -1,3 +1,3 @@
-##Site de Receitas
+# Site de Receitas
 
-#Status: Em desenvolvimento
+## Status: Em desenvolvimento

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Receitas</h1>
+    <div>
+      <label for="receita-escolhida">Qual receita você quer saber?</label>
+      <input type="text" class="receita-escolhida" id="receita-escolhida" placeholder="Digite o nome da receita..." required>
+      <input type="button" class="bt-add-receita" id="bt-add-receita" value="Adicionar Receita">
+    </div>
+      
+    <section class="receitas-user">
+      <div class="card">
+        <h2 class="titulo">Bolo de Cenoura</h2>
+        <button class="favoritar">Favoritar</button>
+        <button class="remover">Remover</button>
+        <h3>Ingredientes:</h3>
+        <ul class="lista-ingredientes">
+          <li>3 cenouras médias</li>
+          <li>3 ovos</li>
+          <li>1 xícara de óleo</li>
+          <li>2 xícaras de açúcar</li>
+          <li>2 xícaras de farinha de trigo</li>
+          <li>1 colher (sopa) de fermento em pó</li>
+        </ul>
+        <h3>Modo de Preparo:</h3>
+        <ol class="preparacao">
+          <li>Bata no liquidificador as cenouras, os ovos e o óleo.</li>
+          <li>Em uma tigela, misture o açúcar e a farinha de trigo.</li>
+          <li>Adicione a mistura do liquidificador à tigela e mexa bem.</li>
+          <li>Por último, acrescente o fermento em pó e misture delicadamente.</li>
+          <li>Despeje a massa em uma forma untada e leve ao forno preaquecido a 180°C por cerca de 40 minutos.</li>
+        </ol>
+        <h3>Avaliação:</h3>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excelente"></label>
+          <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Muito bom"></label>
+          <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Bom"></label>
+          <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Regular"></label>
+          <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Ruim"></label>
+        </div>
+        <span class="rating-value"></span>
+    
+        <h3>Comentários:</h3>
+        <textarea id="comentarios" class="comentarios" placeholder="Deixe seu comentário"></textarea>
+        <button class="enviar-comentario">
+         <i class="fas fa-arrow-alt-circle-right"></i>
+        </button>
+      </div>
+      <div class="card">
+        <h2 class="titulo">Pudim de Leite Condensado</h2>
+        <button class="favoritar">Favoritar</button>
+        <button class="remover">Remover</button>
+        <h3>Ingredientes:</h3>
+        <ul class="lista-ingredientes">
+          <li>1 lata de leite condensado</li>
+          <li>2 latas de leite (use a lata de leite condensado vazia para medir)</li>
+          <li>3 ovos</li>
+          <li>1 xícara de açúcar para a calda</li>
+        </ul>
+        <h3>Modo de Preparo:</h3>
+        <ol class="preparacao">
+          <li>Prepare a calda derretendo o açúcar em uma forma de pudim e reserve.</li>
+          <li>No liquidificador, bata o leite condensado, o leite e os ovos até ficar homogêneo.</li>
+          <li>Despeje a mistura na forma caramelizada e leve para assar em banho-maria no forno preaquecido a 180°C por cerca de 1 hora.</li>
+          <li>Deixe esfriar e leve à geladeira por algumas horas antes de desenformar e servir.</li>
+        </ol>
+        <h3>Avaliação:</h3>
+        <div class="rating">
+          <input type="radio" id="star5-2" name="rating2" value="5" /><label for="star5-2" title="Excelente"></label>
+          <input type="radio" id="star4-2" name="rating2" value="4" /><label for="star4-2" title="Muito bom"></label>
+          <input type="radio" id="star3-2" name="rating2" value="3" /><label for="star3-2" title="Bom"></label>
+          <input type="radio" id="star2-2" name="rating2" value="2" /><label for="star2-2" title="Regular"></label>
+          <input type="radio" id="star1-2" name="rating2" value="1" /><label for="star1-2" title="Ruim"></label>
+        </div>
+        <span class="rating-value"></span>
+    
+        <h3>Comentários:</h3>
+        <textarea id="comentarios" class="comentarios" placeholder="Deixe seu comentário"></textarea>
+        <button class="enviar-comentario">
+         <i class="fas fa-arrow-alt-circle-right"></i>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

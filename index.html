@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>Receitas</h1>
-    <div>
-      <label for="receita-escolhida">Qual receita você quer saber?</label>
-      <input type="text" class="receita-escolhida" id="receita-escolhida" placeholder="Digite o nome da receita..." required>
-      <input type="button" class="bt-add-receita" id="bt-add-receita" value="Adicionar Receita">
+    <div class="form">
+    	<h1>Receitas</h1>
+    	<div>
+      		<label for="receita-escolhida">Qual receita você quer saber?</label>
+      		<input type="text" class="receita-escolhida" id="receita-escolhida" placeholder="Digite o nome da receita..." required>
+      		<input type="button" class="bt-add-receita" id="bt-add-receita" value="Adicionar Receita">
+    	</div>
     </div>
-      
     <section class="receitas-user">
       <div class="card">
         <h2 class="titulo">Bolo de Cenoura</h2>
@@ -38,7 +37,7 @@
           <li>Por último, acrescente o fermento em pó e misture delicadamente.</li>
           <li>Despeje a massa em uma forma untada e leve ao forno preaquecido a 180°C por cerca de 40 minutos.</li>
         </ol>
-        <h3>Avaliação:</h3>
+        <h3>Avalie está receita:</h3>
         <div class="rating">
           <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excelente"></label>
           <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Muito bom"></label>
@@ -49,10 +48,12 @@
         <span class="rating-value"></span>
     
         <h3>Comentários:</h3>
-        <textarea id="comentarios" class="comentarios" placeholder="Deixe seu comentário"></textarea>
-        <button class="enviar-comentario">
-         <i class="fas fa-arrow-alt-circle-right"></i>
-        </button>
+        <div class="comentarios-wrapper">
+          <textarea id="comentarios" class="comments" placeholder="Deixe seu comentário"></textarea>
+          <button class="enviar-comentario">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </button>
+        </div>
       </div>
       <div class="card">
         <h2 class="titulo">Pudim de Leite Condensado</h2>
@@ -72,7 +73,7 @@
           <li>Despeje a mistura na forma caramelizada e leve para assar em banho-maria no forno preaquecido a 180°C por cerca de 1 hora.</li>
           <li>Deixe esfriar e leve à geladeira por algumas horas antes de desenformar e servir.</li>
         </ol>
-        <h3>Avaliação:</h3>
+        <h3>Avalie está receita:</h3>
         <div class="rating">
           <input type="radio" id="star5-2" name="rating2" value="5" /><label for="star5-2" title="Excelente"></label>
           <input type="radio" id="star4-2" name="rating2" value="4" /><label for="star4-2" title="Muito bom"></label>
@@ -83,10 +84,12 @@
         <span class="rating-value"></span>
     
         <h3>Comentários:</h3>
-        <textarea id="comentarios" class="comentarios" placeholder="Deixe seu comentário"></textarea>
-        <button class="enviar-comentario">
-         <i class="fas fa-arrow-alt-circle-right"></i>
-        </button>
+        <div class="comentarios-wrapper">
+          <textarea id="comentarios" class="comments" placeholder="Deixe seu comentário"></textarea>
+          <button class="enviar-comentario">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </button>
+        </div>
       </div>
     </section>
   </body>

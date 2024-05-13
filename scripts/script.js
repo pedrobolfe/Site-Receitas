@@ -96,3 +96,28 @@ addButton.addEventListener('click', function() {
         alert('Por favor, digite o nome da receita.');
     }
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+const API_KEY = "";
+const genAI = new GoogleGenerativeAI(API_KEY);
+
+const model = getGenerativeModel({ model: "gemini-pro" });
+chat = model.startChat({
+	generationConfig: {
+        	maxOutputTokens: 100,a
+	},
+});
+
+chat.sendMessageStream("continue a sequencia 1, 2, 3...20")
+
+
+const prompt = "fale a palavra ola"
+const result = model.generateContent(prompt);
+const response = result.response;
+const text = response.text();
+console.log(text);
+
+
+run();

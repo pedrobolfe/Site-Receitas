@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 @app.get("/rota", response_class=HTMLResponse)
-async def display_recipe(receita):
+async def consult_receita(receita):
     config_ia.convo.send_message(f"Me forneça a receita de {receita}.")
     return config_ia.convo.last.text
 

@@ -59,10 +59,7 @@ convo.send_message("""quando eu pedir uma receita eu quero que retorne as inform
     
     <h3>Modo de Preparo:</h3>
     <ul class="lista-preparo">
-        <li>
-            <input type="checkbox" id="passo1">
-            <label for="passo1"></label>
-        </li>
+        <li></li>
     </ul>
     
     <h3>Avalie esta receita:</h3>

@@ -14,7 +14,7 @@ Para utilizar a API do Google AI Studio, é necessário configurar uma chave de 
 4. Crie uma chave de API para a API do Google AI Studio.
 5. Cole a chave de API no arquivo de configuração do projeto ou defina-a como uma variável de ambiente.
 
-### Como executar a API
+### Como utilizar
 
 1. Instale o ambiente virtual:
     ```

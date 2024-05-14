@@ -1,0 +1,149 @@
+:root {
+    --cor-verde-oliva: #6b8e23;
+    --cor-marrom-escuro: #8b4513;
+    --cor-laranja-queimado: #d2691e;
+    --cor-amarelo-mostarda: #ffd700;
+    --cor-bege-claro: #f5f5dc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-bege-claro);
+}
+
+* {
+    font-family: 'Roboto Slab', Arial, sans-serif;
+}
+
+input[type="button"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--cor-laranja-queimado);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: #ffcc00;
+}
+
+.form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form div {
+    margin-top: 10px;
+}
+
+.form div input {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form div input[type="text"]{
+    width: 50%;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    input[type="text"],
+    textarea {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.receitas-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px;
+    width: calc(25% - 30px); /* Calcula a largura com a margem subtraída */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.titulo {
+    color: var(--cor-marrom-escuro);
+}
+
+.favoritar,
+.remover {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.lista-ingredientes {
+    margin-bottom: 10px;
+}
+
+.lista-ingredientes li {
+    list-style: none;
+}
+
+.preparacao {
+    margin-bottom: 10px;
+}
+
+.preparacao li {
+    list-style: decimal;
+}
+
+
+.estrelas {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    color: #ccc;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.estrelas input {
+    display: none;
+}
+
+.estrelas label {
+    float: right;
+    padding: 0;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.estrelas label:before {
+    content: '\2605';
+}
+
+.estrelas input:checked ~ label,
+.estrelas:not(:checked) > label:hover,
+.estrelas:not(:checked) > label:hover ~ label {
+    color: #f90;
+}
+
+.estrelas input:checked ~ label:hover,
+.estrelas input:checked ~ label:hover ~ label,
+.estrelas label:hover ~ input:checked ~ label {
+    color: #FED;
+    font-weight: bold;
+}  
